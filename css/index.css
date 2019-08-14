@@ -139,11 +139,22 @@ body {
   width: 62.5%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  :root {
+    font-size: 80%;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 1000px;
+  min-width: 350px;
   border: 0.25rem solid #4d49499d;
   background: #4d49499d;
+}
+@media (max-width: 500px) {
+  .container {
+    font-size: 80%;
+  }
 }
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -165,15 +176,31 @@ nav a {
   text-decoration: none;
 }
 .top-section {
-  padding: 1rem;
-  margin: 1rem;
   background: #413f3f;
 }
 .image {
-  width: 35rem;
+  display: flex;
+  width: 22rem;
   text-align: center;
   padding: 1rem;
   margin: 1rem;
+}
+img {
+  display: flex;
+  width: 22rem;
+  justify-content: space-around;
+  text-align: left;
+  padding: 1rem;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  img {
+    display: flex;
+    width: 18rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    justify-content: space-around;
+  }
 }
 .top-text {
   display: flex;
@@ -205,13 +232,20 @@ nav a {
   color: #f2f2f2;
 }
 .bottom-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 1rem;
 }
 table {
+  display: flex;
+  flex-wrap: wrap;
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+}
+@media (max-width: 500px) {
 }
 td,
 th {
@@ -253,6 +287,7 @@ input[type=submit]:hover {
 }
 footer {
   color: #f2f2f2;
+  background: #413f3f;
   padding: 1rem;
   margin: 1rem;
   text-align: center;

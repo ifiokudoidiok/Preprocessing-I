@@ -63,19 +63,31 @@ html, body {
 	margin: 1rem;
  }
  @setAlignmentToBase: baseline;
+ @mobileBreakpoint: 500px;
+ @mobileRootFontSize: 80%;
+ @desktopRootFontSize: 100%;
 
 :root {
-	font-size: 100%;
+	font-size: @desktopRootFontSize;
 	width: 62.5%;
 	margin: 0 auto;
+
+	@media(max-width: @mobileBreakpoint) {
+		font-size: @mobileRootFontSize;
+		// width: 70%;
+	  }
 }
 
 .container {
 	margin: 0 auto;
   max-width: 1000px;
+  min-width: 350px;
   border: 0.25rem solid #4d49499d;
   background: #4d49499d;
-  
+  @media(max-width: @mobileBreakpoint) {
+	font-size: @mobileRootFontSize;
+	// width: 70%;
+  }
 }
 h1 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -103,18 +115,44 @@ h1 {
  }
  .top-section {
 	// border: 0.25rem solid rgb(255, 166, 0);
-	padding: 1rem;
-	margin: 1rem;
+	// padding: 1rem;
+	// margin: 1rem;
 	background: #413f3f;
  }
 
  .image {
-	 width: 35rem;
-	 text-align: center;
+	display: flex;
+	width: 22rem;
+	// justify-content: space-around;
+	// flex-direction: left;
+	text-align: center;
 	// border: 0.25rem solid rgb(0, 255, 255);
 	padding: 1rem;
 	margin: 1rem;
+
+	
  }
+ img {
+	display: flex;
+	width: 22rem;
+	// flex-direction: left;
+	justify-content: space-around;
+	text-align: left;
+	// border: 0.25rem solid rgb(0, 255, 255);
+	padding: 1rem;
+	margin: 1rem;
+
+ }
+ @media(max-width: @mobileBreakpoint) {
+	img  {
+		display: flex;
+		width: 18rem;
+		// justify-content:left;
+		padding: 0.1rem;
+		margin: 0.1rem;
+		justify-content: space-around;
+	}
+  }
 
  .top-text {
 	
@@ -157,19 +195,33 @@ h1 {
  }
 
  .bottom-section {
+	 display: flex;
+	 flex-direction: column;
+	 flex-wrap: wrap;
+
 	// border: 0.25rem solid rgb(255, 166, 0);
 	padding: 1rem;
 	margin: 1rem;
  }
 
  table {
+	display: flex;
+	flex-wrap: wrap;
+	// flex-shrink: 2.5;
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
 	// color: #f2f2f2;
+	@media(max-width: @mobileBreakpoint) {
+		// font: 50%;
+	}
   }
   
   td, th {
+	//   width: 40%;
+	//   display: flex;
+	//   flex-wrap: wrap;
+	//   flex-direction: row;
 	border: 0.25rem solid #dddddd;
 	text-align: left;
 	padding: 1rem;
@@ -218,6 +270,7 @@ h1 {
  footer {
 	// border: 0.25rem solid rgb(217, 255, 0);
 	color: #f2f2f2;
+	background: #413f3f;
 	padding: 1rem;
 	margin: 1rem;
 	text-align: center;
