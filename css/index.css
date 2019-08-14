@@ -142,57 +142,114 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  border: 0.25rem solid blue;
+  border: 0.25rem solid #4d49499d;
+  background: #4d49499d;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 header {
-  border: 0.25rem solid #d9ff00;
-  padding: 1rem;
-}
-nav {
-  border: 0.25rem solid #00ffff;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.top-section {
-  border: 0.25rem solid #ffa600;
   padding: 1rem;
   margin: 1rem;
+  background: #413f3f;
+}
+nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+nav a {
+  color: #f2f2f2;
+}
+.top-section {
+  padding: 1rem;
+  margin: 1rem;
+  background: #413f3f;
 }
 .image {
   width: 35rem;
   text-align: center;
-  border: 0.25rem solid #00ffff;
   padding: 1rem;
   margin: 1rem;
 }
 .top-text {
-  border: 0.25rem solid #00ffff;
+  display: flex;
   padding: 1rem;
   margin: 1rem;
+  flex-direction: column;
+  color: #f2f2f2;
 }
 .mid-section {
-  border: 0.25rem solid #ffa600;
+  display: flex;
   padding: 1rem;
   margin: 1rem;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .my-summary {
-  border: 0.25rem solid #00ffff;
+  display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 1rem;
+  color: #f2f2f2;
 }
 .my-skills {
-  border: 0.25rem solid #00ffff;
+  padding: 1rem;
+  margin: 1rem;
+  color: #f2f2f2;
+}
+.bottom-section {
   padding: 1rem;
   margin: 1rem;
 }
-.bottom-section {
-  border: 0.25rem solid #ffa600;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 0.25rem solid #dddddd;
+  text-align: left;
   padding: 1rem;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+input[type=text],
+select,
+textarea {
+  display: flex;
+  width: 50%;
+  padding: 1rem;
+  border: 0.08rem solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  margin: 0.4rem;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.contact {
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
   margin: 1rem;
 }
 footer {
-  border: 0.25rem solid #d9ff00;
+  color: #f2f2f2;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
