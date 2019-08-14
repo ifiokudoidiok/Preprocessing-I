@@ -62,6 +62,12 @@ html, body {
 	padding: 1rem;
 	margin: 1rem;
  }
+
+ .setPaddingAndMarginTo1Rem() {
+	padding: 1rem;
+	margin: 1rem;
+ }
+
  @setAlignmentToBase: baseline;
  @mobileBreakpoint: 500px;
  @mobileRootFontSize: 80%;
@@ -97,9 +103,9 @@ h1 {
 
  header {
 	// border: 0.25rem solid rgb(217, 255, 0);
-	padding: 1rem;
-	margin: 1rem;
 	background: #413f3f;
+	.setPaddingAndMarginTo1Rem();
+	
  }
 
  nav {
@@ -127,11 +133,11 @@ h1 {
 	// flex-direction: left;
 	text-align: center;
 	// border: 0.25rem solid rgb(0, 255, 255);
-	padding: 1rem;
-	margin: 1rem;
+	.setPaddingAndMarginTo1Rem();
 
 	
  }
+
  img {
 	display: flex;
 	width: 22rem;
@@ -139,8 +145,7 @@ h1 {
 	justify-content: space-around;
 	text-align: left;
 	// border: 0.25rem solid rgb(0, 255, 255);
-	padding: 1rem;
-	margin: 1rem;
+	.setPaddingAndMarginTo1Rem();
 
  }
  @media(max-width: @mobileBreakpoint) {
@@ -200,8 +205,7 @@ h1 {
 	 flex-wrap: wrap;
 
 	// border: 0.25rem solid rgb(255, 166, 0);
-	padding: 1rem;
-	margin: 1rem;
+	.setPaddingAndMarginTo1Rem();
  }
 
  table {
@@ -212,9 +216,7 @@ h1 {
 	border-collapse: collapse;
 	width: 100%;
 	// color: #f2f2f2;
-	@media(max-width: @mobileBreakpoint) {
-		// font: 50%;
-	}
+	
   }
   
   td, th {
@@ -271,7 +273,6 @@ h1 {
 	// border: 0.25rem solid rgb(217, 255, 0);
 	color: #f2f2f2;
 	background: #413f3f;
-	padding: 1rem;
-	margin: 1rem;
+	.setPaddingAndMarginTo1Rem();
 	text-align: center;
  }
