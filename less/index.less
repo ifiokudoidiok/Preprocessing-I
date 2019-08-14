@@ -57,6 +57,12 @@ html, body {
 	
     height: 100%;
 }
+ .displayPreference() {
+	display: flex;
+	padding: 1rem;
+	margin: 1rem;
+ }
+ @setAlignmentToBase: baseline;
 
 :root {
 	font-size: 100%;
@@ -87,12 +93,13 @@ h1 {
  nav {
 	// border: 0.25rem solid rgb(0, 255, 255);
 	display: flex;
-  	align-items: baseline;
+  	align-items: @setAlignmentToBase;
 	  justify-content: space-around;
 	  
  }
  nav a{
 	color: #f2f2f2;
+	text-decoration: none;
  }
  .top-section {
 	// border: 0.25rem solid rgb(255, 166, 0);
@@ -110,22 +117,16 @@ h1 {
  }
 
  .top-text {
-	// text-align: center;
 	
-	// border: 0.25rem solid rgb(0, 255, 255);
-	display: flex;
-	padding: 1rem;
-	margin: 1rem;
+	.displayPreference();
 	flex-direction: column;
 	color: #f2f2f2;
 	
  }
 
  .mid-section {
-	display: flex;
-	padding: 1rem;
-	margin: 1rem;
-	align-items: baseline;
+	.displayPreference();
+	align-items: @setAlignmentToBase;
 	flex-direction: row;
 	flex-wrap: wrap;
 	
@@ -138,12 +139,11 @@ h1 {
  .my-summary {
 	// text-align: center;
 	// width: 20rem;
-	display: flex;
+	.displayPreference();
 	flex-wrap: wrap;
 	// align-items: baseline;
 	// border: 0.25rem solid rgb(0, 255, 255);
-	padding: 1rem;
-	margin: 1rem;
+
 	color: #f2f2f2;
 	// width: 50%;
  }
@@ -151,8 +151,8 @@ h1 {
 	// text-align: center;
 	// width: 20rem;
 	// border: 0.25rem solid rgb(0, 255, 255);
-	padding: 1rem;
-	margin: 1rem;
+	.displayPreference();
+	flex-direction: column;
 	color: #f2f2f2;
  }
 

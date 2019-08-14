@@ -162,6 +162,7 @@ nav {
 }
 nav a {
   color: #f2f2f2;
+  text-decoration: none;
 }
 .top-section {
   padding: 1rem;
@@ -191,14 +192,16 @@ nav a {
 }
 .my-summary {
   display: flex;
-  flex-wrap: wrap;
   padding: 1rem;
   margin: 1rem;
+  flex-wrap: wrap;
   color: #f2f2f2;
 }
 .my-skills {
+  display: flex;
   padding: 1rem;
   margin: 1rem;
+  flex-direction: column;
   color: #f2f2f2;
 }
 .bottom-section {
