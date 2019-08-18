@@ -1,8 +1,11 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <title>My Resume</title>
 
@@ -14,6 +17,121 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#intro">About</a>
+        <a href="https://ifiokudoidiok.github.io/portfolio/">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="top-section">
+        <div class="image">
+          <img src="./img/user-interface.jpg" alt="my-img">
+        </div>
+
+        <div class="top-text">
+          <h1 class="intro" id="intro"> Ifiok Udoidiok - Software Engineer</h1>
+
+          <p>Technology is my jam!</p>
+          <br>
+          <p>
+            Computer Science- Fullstack Web Development Track at Lambda School || Freelance Software Developer at Fiverr
+            US</p>
+
+        </div>
+
+      </div>
+
+      <div class="mid-section">
+        <div class="my-summary" id="summary">
+          <h1>Summary...</h1>
+          <p>I am:
+            1. A Front-end Javascript Developer with 3years+ Experience in web development using Vanilla JS.
+            2. a professional in HTML5, CSS3 and JS.
+
+            I have:
+            1. worked with frameworks such as Bootstrap since 2016,
+            2. very basic knowledge on Knockout.js and Angular.js I recently completed a course by google as a mobile
+            web specialist, learning the best practices in ECMAScript6.
+            I develop software from Linux environment.
+            I'm also a Pro DJ .</p>
+        </div>
+        <div class="my-skills">
+          <h1>Skills Set...</h1>
+          <p>Java, HTML5, Cascading Style Sheets (CSS),HTML, C, Windows, Photoshop, Matlab, Computer Hardware, CSS,
+            Microsoft Word, Python, Serato Scratch Live, MySQL, SQL, Linux, Git, Github, JSON
+          </p>
+        </div>
+
+
+      </div>
+
+      <div class="bottom-section">
+        <h1> Work History</h1> <br>
+
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Duration</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>Quanteq Technologies</td>
+            <td>Software Developer</td>
+            <td>6 Months</td>
+            <td>Abuja, NG</td>
+          </tr>
+
+
+
+          <tr>
+            <td>Fiverr US</td>
+            <td>Freelance Web Developer</td>
+            <td>8 Months</td>
+            <td>Remote</td>
+          </tr>
+          <tr>
+            <td>Uma Ukpai Polytechnic</td>
+            <td>Computer Engineer</td>
+            <td>1 year</td>
+            <td>Abia, NG</td>
+          </tr>
+        </table>
+      </div>
+
+    </main>
+
+    <div class="contact" id="contact">
+
+      <h1>Send me a mail</h1>
+      <br>
+
+
+      <form action="#">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your full name here...">
+
+
+
+
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+    <footer>
+      <p>Copyright menadio</p>
+    </footer>
+  </div>
+
 </body>
+
 </html>
